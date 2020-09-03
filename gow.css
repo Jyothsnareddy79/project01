@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+.home-page {
+  background-image: url(https://lh3.googleusercontent.com/OH39FO6AK5cfY9WcEEJj2-Bf8qh2yyAPXgxSPRVBLtXWGLu_BUSOHDUBeb67MI0_xg5pJNOtdkLqal6R3U3NV0evGa0=w1000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+header {
+  background: radial-gradient(circle at top left,transparent 340px,rgba(51,25,25,.3)),radial-gradient(circle at bottom right, transparent 340px, rgba(51, 25, 25, .3));
+  height: 80px;
+}
+.container-home {
+    width: 90%;
+    height: 60px;
+    justify-content: center;
+}
+.logo {
+  float: left;
+  padding:10px;
+  font-size: 40px;
+  margin: 20px 40px;
+  color: white;
+}
+.header-right {
+  margin: 20px 20px;
+  float: right;
+  color: white;
+
+}
+
+.header-right ul {
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  padding: 0 15px;
+}
+.header-right ul li {
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 5px;
+  transition: 0.6s ease;
+  
+}
+.header-right ul li a {
+  text-decoration: none;
+
+  color:white;
+  padding: 7px 10px;
+  font-size: 20px;
+  background-color: black;
+}
+
+.header-right ul li a:hover {
+  background-color: grey;
+  border-radius: 50%;
+}
+.top-wrapper {
+ 
+  color: white;
+  text-align: center;
+}
+.container p {
+  margin: 300px 30px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+.btn-wrapper ul {
+  list-style: none;
+  padding: 0 15px;
+
+}
+.btn-wrapper ul li {
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 5px;
+  transition: 0.6s ease;
+  
+}
+.btn-wrapper ul li a {
+  text-decoration: none;
+
+  color:white;
+  padding: 7px 10px;
+  font-size: 20px;
+  background-color:yellow;
+}
+.btn-wrapper ul li a:hover {
+  background-color:grey;
+  border-radius: 50%;
+} 
+
+footer {
+  background-color: red;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+/* menu-page*/
+.menu-container {
+  background-image: url(data:image/jpeg;base64,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);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  
+}
+.menu-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  }
+.menu-container h3 {
+  text-align: center;
+}
+.menu-page h2 {
+  text-align: center;
+  color:black;
+}
+
+.sub-container1,.sub-container2,.sub-container3 {
+  width: 25%;
+  height: 90%;
+  background: radial-gradient(circle at top left,transparent 340px,rgba(255,255,255,.3)),radial-gradient(circle at bottom right, transparent 340px, rgba(255, 255, 255, .3));
+  margin: 15px;
+  padding: 5px;
+  color: whitesmoke;
+  transition: .3s ease-in-out;
+  border-radius: 50px 0 50px 0px;
+  box-shadow: 0px 0px 10px 0px white;
+  padding-left: 20px;
+  border: 2px solid black;
+}
+.sub-container1:hover,.sub-container2:hover,.sub-container3:hover {
+   background: radial-gradient(circle at top left,transparent 280px,rgba(0,0,0,.3)),radial-gradient(circle at bottom right, transparent 280px, rgba(0,0,0,.3)); 
+}
+.biryani-box,.curry-box {
+  padding: 20px 20px 20px 20px;
+
+}
+.biryani-box p {
+  text-align: right;
+}
+.curry-box p {
+  text-align: right;
+}
+/* navigation bar*/
+.nav {
+  background:#0082E6;
+  height: 60px;
+  width: 100%;
+
+}
+.menu1 {
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    line-height: 45px;
+    padding: 5px;
+}
+.nav ul {
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  padding:0 15px;
+
+}
+.nav ul li  {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid white;
+  transition: 0.6s ease;
+}
+.nav ul li a {
+  padding: 7px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 50%;
+}
+.menu1 li a:hover {
+  background: yellow;
+}
+/* service page */
+.services-page {
+ 
+  background-image: url(https://www.setxweddings.com/wp-content/uploads/2015/10/Wedding-Caterer-Wildwood-Resort-City.jpg);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.containers {
+  width: 1200px;
+  height: auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  box-sizing:border-box;
+  flex-direction:row;
+  justify-content:space-around;
+  border-radius: 20px 0px 20px 0px;
+  text-align: center;
+  flex-flow: wrap;
+
+}
+.containers .boxs1 {
+  width: 20%;
+  height:300px;
+  flex-direction: column;
+  background: yellow;
+  margin:20px;
+  box-sizing: border-box;
+  border-radius: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+.b2 img {
+  height:100px;
+  width: 100px;}
+.b3 {
+     color: black;
+}
+
+
+/* contact page */
+.contact-page {
+  background-image: url(https://img.freepik.com/free-photo/old-grunge-cement-wall-backgrounds_34552-195.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.details {
+  display: flex;
+  flex-wrap: row;
+  align-items: center;
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+}
+.c1,.c2 {
+  width: 40%;
+  height:90%;
+  background: radial-gradient(circle at top left,transparent 340px,rgba(255,255,255,.3)),radial-gradient(circle at bottom right, transparent 340px, rgba(255, 255, 255, .3));
+  margin:20px;
+
+  border-radius: 20px 20px 20px 20px;
+  text-decoration: none;
+  padding: 1%;
+  color: white;
+}
+.c1 {
+    font-size:30px;
+}
+
+.c2 {
+  font-size: 45px;
+  text-align: center;
+}
+.c1 h5 {
+    text-align: center;
+}
+.c1 h4 {
+    text-align:left;
+    padding:1%; 
+}
+.c1 p {
+      text-align: right;
+}
+@media (max-width: 1000px) {
+  .header-right ul li a {
+      display: inline-block;
+  }
+/* navigation bar*/
+ .nav {
+  background:#0082E6;
+  height: 60px;
+  width: 100%;
+
+}
+/*menu page */
+.sub-container1,.sub-container2,.sub-container3 {
+  width: 40%;
+  height: auto;
+ }
+.menu1 {
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 5px;
+}
+.nav ul {
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  padding:0 10px;
+
+}
+.nav ul li  {
+  display: inline-block;
+  text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+
+  border: 2px solid white;
+  transition: 0.6s ease;
+}
+.nav ul li a {
+  padding: 7px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 50%;
+}
+.menu1 li a:hover {
+  background: yellow;
+}
+/* contact page*/
+ .details {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+ }
+ .c1 {
+    font-size:25px;
+}
+
+ .c2 {
+  font-size: 40px;
+  text-align: center;
+}
+ .c1 h5 {
+    text-align: center;
+}
+ .c1 h4 {
+    text-align:left;
+    padding:1%; 
+}
+ .c1 p {
+      text-align: right;
+}
+.c2,.c1 {
+  width: 90%;
+}
+/* service page*/
+ 
+.boxs1{
+  width: 40%;
+ }
+}
+@media only screen and (min-width:300px) and (max-width: 767px) {
+  *{
+    box-sizing: border-box;
+  }
+  
+  .header-right {
+    display:;
+  }
+  .mobile-icon {
+    display:block;
+    color: white;
+    float: right;
+    margin-top: 2%;
+    margin-right:2%;
+  }
+  .menu1 {
+    width: 100%;
+  }
+  .container-home {
+    height: 330px;
+
+  }
+  .header-right ul {
+    text-align: center;
+  }
+  .header-right  ul li {
+    display: block;
+  }
+  }
+  .header-right ul li a {
+    display: block;
+    font-size: 25px;
+  }
+  }
+  /* menu page */
+  .menu-container {
+    flex-direction: column;
+  }
+  .sub-container1,.sub-container2,.sub-container3 {
+    width: 60%;
+
+  }
+  .menu1 {
+    width: 100%;
+  }
+  .nav {
+    height: 330px;
+
+  }
+  .nav ul {
+    hei
+    text-align: center;
+  }
+  .nav ul li {
+    display: block;
+  }
+  }
+  .nav ul li a {
+    display: block;
+    font-size: 25px;
+  }
+  /cantactpage/
+  .details {
+      width: 100%;
+  }
+  .c1,.c2,{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+  }
+  .c1 {
+    font-size:25px;
+  }
+
+  .c2 {
+  font-size: 40px;
+  text-align: center;
+  }
+  .c1 h5 {
+    text-align: center;
+  }
+  .c1 h4 {
+    text-align:left;
+    padding:1%; 
+  }
+  .c1 p {
+      text-align: right;
+  footer {
+    padding:5px;
+  }
+  /services page/
+  .containers {
+    flex-direction:column-reverse;
+
+  }  
+  .boxs1 {
+     width: 90%;
+  
+  }
+}

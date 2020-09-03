@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript strings</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			color: #610B21;
+		}
+		body,.container {
+			width: 100%;
+
+			
+		}
+		body{
+			background-image: url(https://tse2.mm.bing.net/th?id=OIP.-n_g4bEjruEtCn9cMUL7QQHaEK&pid=Api&P=0&w=288&h=163);
+			background-color:#610B21 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			font-style: italic;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding-bottom:50px;
+		}
+		.box1,.box2,.box3 {
+			width: 25%;
+			height: 100%;
+			background: radial-gradient(circle at top left,transparent 340px,rgba(255,255,255,.3)),radial-gradient(circle at bottom right, transparent 340px, rgba(255, 255, 255, .3));
+			margin: 15px;
+			padding: 5px;
+			color: whitesmoke;
+			transition: .3s ease-in-out;
+			border-radius: 50px 50px 50px 50px;
+            box-shadow: 0px 0px 10px 0px white;
+            padding-left: 20px;
+		}
+
+		h1 {
+			font-size: 30px;
+			color: #F5FFFA;
+		}
+		p {
+			color:#000000;
+			font-size: 18px;
+
+		}
+		h4 {
+			color:#F5FFFA;
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: black">JavaScript String Methods:</h1>
+	<div class="container">
+		<div class="box1">
+			<!--<h3>String-length(),indexOf(),lastindexOf(),search()</h3>-->
+			<h4><u>document.write method:</u></h4>
+			<p>document.write method is used to print anything in a web page.<br>
+            <u>Example:</u>document.write("Welcome to MITS WEBCLUB.");<br>
+            Output:Welcome to MITSWEBCLUB.</p>
+            <h4><u>length() method:</u></h4>
+            <p>Length() method is used to find the length of the string.
+            <u>Example:</u>My name is Jyothsna.<br>
+            x.length()=20 </p>
+            <h4><u>indexOf():</u></h4>
+            <p> The indexOf() method returns the index of the first occurrence of a specified text.<br>
+            	<u>Example:</u>var x="Hello joshna, this is also joshna."<br>
+            	x.indexOf("joshna",5)=6
+            </p>
+            <h4><u>lastIndexOf() method:</u></h4>
+            <p>The lastIndexOf() method returns the index of the last occurrance of a specified text in a output.<br>
+            	<u>Example:</u>var x="Hello joshna, this is also joshna."<br>
+            	x.lastIndexOf("joshna")=27
+            </p>
+            <h4><u>search() method:</u></h4>
+            <p>The search() method searches a string for a specified value and returns the position of the value.But it will not accepct the second parameter of indexOf() method.It has only one parameter.<br>
+            	<u>Example:</u>var x="If you can do it,you can do it."<br>
+            	x.search("you")=3
+            </p>
+           
+
+
+			
+		</div>
+		<div class="box2">
+		<!--<h3>String-toLowerCase(),toUpperCase(),replace(g,i)</h3>-->
+			<h4><u>toLowerCase() method:</u></h4>
+			<p> The toLowerCase() method is to convert the string to lowercase letters.<br>
+				<u>Example:</u>var x="ITS OK NOT TO BE OK." <br>
+				x.toLowerCase()=Its ok not to be ok.
+			</p>
+			<h4><u>toUpperCase() method:</u></h4>
+			<p>The toUpperCase() method is to convert the string to lowercase letters.<br>
+				<u>Example:</u>var x="Its ok NOT to be ok." <br>
+				x.toUpperCase()=ITS OK NOT TO BE OK.
+			</p>
+            <h4><u>slice() method:</u></h4>
+			<p>The slice() extracts a part of a string and returns the extracted part in a new string.It accepts both positive and negative indexes.<br>
+				<u>Example:</u>var x="Its ok not to be ok." <br>
+				x.slice(7,13)=not to<br>
+				x.slice(-7,-1)=be ok
+			</p>
+			<h4><u>substring() method:</u></h4>
+			<p>The substring() method is similar to slice() method but it cannot accept negative indexes.<br>
+				<u>Example:</u>var x="Its ok not to be ok." <br>
+				x.substring(7,16)=not to be
+			</p>
+			<h4><u>substr() method:</u></h4>
+			<p> The substr() method is similar to slice() method but the second parameter specifies the length of the text to be displayed.<br>
+				<u>Example:</u>var x="Its ok not to be ok." <br>
+				x.substr(7,6)=not to 
+			</p>
+
+		</div>
+		<div class="box3">
+			
+			<h4><u>replace() method:</u></h4>
+			<p>The replace() method is used to replace a specified word with another word.It will have two parameters.First parameter is the word which we want to replace and second parameter is a replaced word.This method is case sensitive.<br>
+				<u>Example:</u>var x="Its ok not to be ok." <br>
+                x.replace("ok","OK")=Its OK not to be ok
+			</p>
+			<h4><u>replace using "i" and "g" method:</u></h4>
+			<p>To replace case insensitive, use a regular expression with an /i flag (insensitive).To replace all matches, use a regular expression with a /g flag (global match).<br>
+				<u>Example:</u>var x="Its ok not to be ok."  <br>
+				x.replace(/not/i,"NOT")=Its ok NOT to be ok.<br>
+				x.replace(/not/g,"NOT")=Its ok NOT to be ok.
+			</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+</body>
+</html>
